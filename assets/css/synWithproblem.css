@@ -1,0 +1,104 @@
+html{
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
+}
+#container{
+    overflow-y: scroll;
+}
+::-moz-selection{
+    background-color: #0a0902;
+}
+::selection{
+    background-color: #F1C40F;
+    color: whitesmoke;
+}
+nav{
+    font-family: 'Prompt', sans-serif;
+    background-color: white;
+    height: 85px;
+    width: 100%;
+    font-weight: 300%;
+}
+.nav-item{
+    margin-right: 20px;
+}
+i{
+    margin: 3px;
+    color: #F3CA72;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 100;
+}
+.title-section{
+    max-width: 100%;
+}
+.title-section{
+    background-color: white;
+    padding: 160px 0;
+}
+.title-section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #566573;
+    
+}
+.btn{
+    width: 230px;
+    height: 50px;
+    border-radius: 16px;
+    font-size: 16px;
+}
+.subtext{
+    color: #566573;
+}
+h1.title{
+    font-size: 105px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#79C5D1, #3C9FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bold{
+    font-weight: 700;
+}
+
+.large-title{
+    font-size: 36px;
+}
+.subhead{
+    font-size: 26px;
+    color: #283747;
+}
+.highlight-text{
+    background-color: #F1C40F;
+}
+.introduce-section,
+.detail-section{
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #283747;
+    padding: 128px 0;
+}
+.skill-section,
+.example-section{
+    background-color: #F2F3F4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #283747;
+    padding: 80px 0; 
+}
+.download-section{
+    background-color: #cce7e8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
