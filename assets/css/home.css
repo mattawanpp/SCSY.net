@@ -29,15 +29,24 @@ i{
 .dropdown-toggle::after {
     display: none !important;
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,.btn{
     font-family: 'Prompt', sans-serif;
     font-weight: 100;
+}
+p{
+    font-size: 18px;
+    font-weight: 200;
+    color: #566573;
+}
+.grey-color{
+    color: #566573;
 }
 .title-section{
     max-width: 100%;
 }
 .title-section{
-    background-color: white;
+    background-image: url(../Images/bgTitle-01.png);
+    background-color: transparent;
     padding: 160px 0;
 }
 .title-section{
@@ -52,6 +61,7 @@ h1,h2,h3,h4,h5,h6,p{
     height: 50px;
     border-radius: 16px;
     font-size: 16px;
+    border-width: 2px;
 }
 .subtext{
     color: #566573;
@@ -77,8 +87,7 @@ h1.title{
 .highlight-text{
     background-color: #F1C40F;
 }
-.introduce-section,
-.detail-section{
+.introduce-section{
     background-color: white;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,17 +95,24 @@ h1.title{
     color: #283747;
     padding: 128px 0;
 }
+.detail-section{
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #283747;
+    padding: 80px 0;
+}
 .skill-section,
 .example-section{
     background-color: #F2F3F4;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #283747;
     padding: 80px 0; 
 }
 .download-section{
-    background-color: #cce7e8;
+    background-color: #C6ECF6;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -77,28 +77,20 @@ h1.title{
 .highlight-text{
     background-color: #F1C40F;
 }
-.introduce-section,
-.detail-section{
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #283747;
-    padding: 128px 0;
+.title-section{
+    width: 100%;
+    background-color: #8AC5D0;
+    padding: 100px 0;
+    scroll-behavior: smooth;
 }
-.skill-section,
-.example-section{
-    background-color: #F2F3F4;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #283747;
-    padding: 80px 0; 
+.vdo-section{
+    scroll-behavior: smooth;
+    padding: 56px 0;
+    background-color: #F8F9F9;
 }
-.download-section{
-    background-color: #cce7e8;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 80px 0;
+.card{
+    border-radius: 16px;
+}
+.card-text{
+    color: #ABB2B9;
 }

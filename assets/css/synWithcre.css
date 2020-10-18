@@ -77,28 +77,19 @@ h1.title{
 .highlight-text{
     background-color: #F1C40F;
 }
-.introduce-section,
-.detail-section{
+.brucejoyce-section{
+    background-color: #D6EAF8;
+    padding: 240px 0;
+}
+.gordon-section{
     background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #283747;
-    padding: 128px 0;
+    padding: 80px 0;
 }
-.skill-section,
-.example-section{
+.learning-section{
     background-color: #F2F3F4;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #283747;
-    padding: 80px 0; 
+    padding: 80px 0;
 }
-.download-section{
-    background-color: #cce7e8;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.conclude-section{
+    background-color: #D6EAF8;
     padding: 80px 0;
 }
