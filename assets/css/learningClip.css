@@ -26,6 +26,11 @@ i{
     margin: 3px;
     color: #F3CA72;
 }
+p{
+    font-size: 18px;
+    font-weight: 200;
+    color: #566573;
+}
 .dropdown-toggle::after {
     display: none !important;
 }
@@ -44,7 +49,6 @@ h1,h2,h3,h4,h5,h6,p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #566573;
     
 }
 .btn{
@@ -53,6 +57,7 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 16px;
     font-size: 16px;
 }
+
 .subtext{
     color: #566573;
 }
@@ -66,7 +71,9 @@ h1.title{
 .bold{
     font-weight: 700;
 }
-
+.grey-color{
+    color: #566573;
+}
 .large-title{
     font-size: 36px;
 }
@@ -79,18 +86,28 @@ h1.title{
 }
 .title-section{
     width: 100%;
-    background-color: #8AC5D0;
+    background-color: white;
     padding: 100px 0;
     scroll-behavior: smooth;
 }
 .vdo-section{
+    max-width: 100%;
     scroll-behavior: smooth;
     padding: 56px 0;
     background-color: #F8F9F9;
+}
+iframe{
+    width: 70%;
 }
 .card{
     border-radius: 16px;
 }
 .card-text{
     color: #ABB2B9;
+}
+.traveling-section{
+    max-width: 100%;
+    scroll-behavior: smooth;
+    padding: 56px 0;
+    background-color: #C6ECF6;
 }

@@ -2,6 +2,11 @@ html{
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
 }
+@media only screen and (min-width: 500px) {
+    body{
+      width: 100%;
+    }
+  }
 #container{
     overflow-y: scroll;
 }
@@ -29,7 +34,16 @@ i{
 .dropdown-toggle::after {
     display: none !important;
 }
-h1,h2,h3,h4,h5,h6,p{
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  @media (min-width: 576px) {
+    .mt-sm-0{
+      margin-top: 0 !important;
+    }
+  }
+h1,h2,h3,h4,h5,h6,p,.btn{
     font-family: 'Prompt', sans-serif;
     font-weight: 100;
 }
@@ -44,14 +58,7 @@ h1,h2,h3,h4,h5,h6,p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #566573;
     
-}
-.btn{
-    width: 230px;
-    height: 50px;
-    border-radius: 16px;
-    font-size: 16px;
 }
 .subtext{
     color: #566573;
@@ -80,7 +87,8 @@ h1.title{
 .title-section{
     width: 100%;
     background-color: white;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 0;
     scroll-behavior: smooth;
 }
 .vdo-section{
@@ -95,11 +103,32 @@ h1.title{
     color: #ABB2B9;
 }
 .type-section{
-    background-color: #F2F3F4;
+    background-image: url(../Images/portSynBG\ copy.png);
+    background-color: transparent;
     padding: 64px 0;
+    color: white;
 }
 .btn{
     width: 500px;
     height: 50px;
     border-radius: 16px;
 }
+.curve-bg{
+    margin-top: 150px;
+}
+@media only screen and (min-width: 500px) {
+    .curve-bg {
+      margin-top: 130px;
+    }
+    .top-solve{
+        margin-top: 40px;
+    }
+    .btn{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .curve-bg {
+      margin-top: 0px;
+    }
+  }

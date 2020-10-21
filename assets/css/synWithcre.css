@@ -63,10 +63,17 @@ h1.title{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+p{
+    font-size: 18px;
+    font-weight: 200;
+    color: #566573;
+}
 .bold{
     font-weight: 700;
 }
-
+.grey-color{
+    color: #566573;
+}
 .large-title{
     font-size: 36px;
 }
