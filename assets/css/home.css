@@ -1,6 +1,7 @@
 html{
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
+    margin: 0px;
 }
 @media screen and (max-device-width: 960px) {
     font-size: 14px;
@@ -137,16 +138,57 @@ h1.title{
 .download-section{
     position: relative;
     width: 100%;
-    padding-top: 56px;
-    padding-bottom: 100px;
     color: white;
     background: url("../img/bg-pattern.png"), #7b4397;
-    background: url("../img/bg-pattern.png"), linear-gradient(to left, #36D1DC, #5B86E5);
+    background: url("../img/bg-pattern.png"), linear-gradient( #000428, #004e92);
 }
 .footer-section{
     background-color: #7AC4D0;
 }
-.responsive {
-    width: 100%;
-    height: auto;
+  @media only screen and (min-width: 600px) {
+    .large {
+      width: 500px;
+    }
+    .device-responsive{
+        width: 900px;
+        position: relative;
+    }
+    .text-margin{
+        margin-top : 50px 0;
+    }
   }
+  @media only screen and (max-width: 600px) {
+    .large {
+      width: 100%;
+    }
+    .device-responsive{
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1590px) {
+    .large {
+      width: 100%;
+    }
+    .device-responsive{
+        width: 700px;
+    }
+  }
+  @media only screen and (max-width: 1335px) {
+    .large {
+      width: 100%;
+    }
+    .device-responsive{
+        width: 600px;
+    }
+  }
+  @media only screen and (max-width: 1027px) {
+    .large {
+      width: 100%;
+    }
+    .device-responsive{
+        width: 100%;
+    }
+  }
+  .download-section{
+    padding: 56px 0;
+}

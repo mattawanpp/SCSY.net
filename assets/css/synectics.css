@@ -2,6 +2,11 @@ html{
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
 }
+@media only screen and (min-width: 500px) {
+    body{
+      width: 100%;
+    }
+  }
 #container{
     overflow-y: scroll;
 }
@@ -89,8 +94,13 @@ h1.title{
     background-color: #F1C40F;
 }
 .title-introduction{
-    background-color: #D6EAF8;
-    padding: 480px 0;
+    background-image: url(../Images/synecticsBG-01.png);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 400px 0;
+    color: white;
 }
 .meaning-section{
     background-color: #white;
@@ -108,3 +118,16 @@ h1.title{
     background-color: #FAFAFB;
     padding: 48px 0;
 }
+@media only screen and (min-width: 600px) {
+    .large {
+      width: 500px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .large {
+      width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+  }
