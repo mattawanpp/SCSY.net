@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bc7bf3f267.js" crossorigin="anonymous"></script>
-
+    <link rel="icon" type="image/png" href="../ourProject/assets/Images/iconlogo-01.png" sizes="64x64">
     <title>SCSY | เว็บไซต์การเรียนการสอน Synectics</title>
   </head>
 
@@ -28,7 +28,7 @@
                       <a class="nav-link" href="#"></a>
                   </li>
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down"></i></a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down" id="navIcon"></i></a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="../ourProject/creativity.html">ความคิดสร้างสรรค์</a>
                           <a class="dropdown-item" href="../ourProject/synectics.html">ความรู้เบื้องต้นเกี่ยวกับ Synectics</a>
@@ -50,7 +50,8 @@
           </div>
       </div>
   </nav>
-      <div class="jumbotron jumbotron-fluid mb-0 title-section text-center">
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+      <div class="main-title jumbotron jumbotron-fluid mb-0 title-section text-center" id="top-home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-lg-left align-self-center order-2 order-lg-1">
@@ -71,12 +72,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 text-lg-left align-self-center order-2 order-lg-1 text-sm-center">
-                <h2 class="bold">ซินเนคติกส์ (Synectics) คืออะไร ?</h2>
+                <h2 class="bold">ซินเนคติกส์ (Synectics)<br>คืออะไร ?</h2>
                 <p>ซินเนคติกส์ เป็นพื้นฐานของการคิดเชิงสร้างสรรค์ มุ่งพัฒนาความคิดสร้างสรรค์ของผู้เรียนด้วยโดยใช้กระบวนการเปรียบเทียบ <span class="highlight-text">เพื่อช่วยในการสร้างผลงานที่สร้างสรรค์แปลกใหม่ไม่ซ้ำเดิม</span> และจากคุณสมบัติที่สำคัญของความคิดสร้างสรรค์  มนุษย์จะใช้ความคิดสร้างสรรค์ในการผลิตสิ่งใหม่ๆ หรือมีวิธีการคิดแก้ปัญหาอย่างมีกลยุทธ์รอบด้านซึ่งไม่ใช่เฉพาะด้านการงานเท่านั้น แต่ความคิดสร้างสรรค์ยังสามารถนำไปปรับใช้ในชีวิตประจำวัน หรือแม้กระทั่งชีวิตครอบครัวได้อย่างมีประสิทธิภาพ</p>
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0 text-sm-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OOy764mDtiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nFiw6qjgje4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -87,18 +88,18 @@
             <h3 class="bold">เมื่อเรียนแล้วจะพัฒนาทักษะในด้าน</h3><br>
             <div class="row">
                 <div class="col-md-6 col-lg-4 col-md-12 p-2">
-                    <img class="mb-5" src="../ourProject/assets/Images/art-01.png" width="200px"><br>
+                    <img class="mb-5" src="../ourProject/assets/Images/art1-01.png" width="200px"><br>
                     <h4 class="bold head-blue">ด้านศิลปะ (Artistic Creativity)</h4>
                     <p>งานด้านความสุนทรีย์ทั้งหลายที่ช่วยจรรโลงความรู้สึกให้เกิดความสบายใจ ความพึงพอใจและความสุข เช่น การวาดภาพ การถ่ายภาพ การแต่งเพลง การเต้นรำ การออกแบบทรงผม การออกแบบเครื่องแต่งกาย เป็นต้น</p>
                 </div>
                 <div class="col-md-6 col-lg-4 col-md-12 p-2">
-                    <img class="mb-5" src="../ourProject/assets/Images/search-01-01.png" width="200px">
+                    <img class="mb-5" src="../ourProject/assets/Images/search2-01.png" width="200px">
                     <h4 class="bold head-blue">ด้านการค้นพบ (Creativity of Discovery)</h4>
                     <p>การคิดที่เกิดจาก
                         การสังเกต หรือการปฏิบัติการด้วยการทดลองจากสถานการณ์ที่ใกล้ตัว และค้นพบสิ่งใหม่ ๆ นับตั้งแต่จากผลิตภัณฑ์ที่เป็นธรรมชาติจนถึงผลิตภัณฑ์ใหม่ๆ ที่เกิดจากการประดิษฐ์คิดค้น</p>
                 </div>
                 <div class="col-md-6 col-lg-4 col-md-12 p-2">
-                    <img class="mb-5" src="../ourProject/assets/Images/laugh-01.png" width="200px">
+                    <img class="mb-5" src="../ourProject/assets/Images/laughing-01.png" width="200px">
                     <h4 class="bold head-blue">ทางอารมณ์ขัน (Creativity of Humour)</h4>
                     <p>ซึ่งนับได้ว่าเป็นสิ่งที่พิเศษแตกต่างไปจากสองรูปแบบที่กล่าวมานั้น เพราะการมีอารมณ์ขันนั้นเป็นการมองโลกในมุมมองที่แตกต่างกันออกไป จนเป็นปัจจัยที่ทำให้เกิดความคิดสร้างสรรค์ขึ้น เช่น พวกที่มีอาชีพ Talk Show หรือดาวตลกพวกนี้มักจะจำคำพูด หรือลักษณะท่าทางของบุคคลที่มีชื่อเสียงที่ได้จากสถานการณ์และเหตุการณ์ที่เกิดขึ้นในสังคมขณะนั้น นำมาเสนอในรูปแบบละครตลก หรือสนทนาตลกให้คนชมได้ยินแล้วเกิดอารมณ์ขำจนหัวเราะออกมาอย่างมีความสุข</p>
                 </div>
@@ -111,7 +112,7 @@
         <div class="row">
             <div class= "col-lg-6 align-self-center text-margin">
                 <h3 class="bold">สแกนเพื่อดาวน์โหลดเอกสารประกอบการเรียน</h3>
-                <img class="text-center mt-5 mb-5" src="../ourProject/assets/Images/fakeQR-01.png" width="300">
+                <img class="text-center mt-5 mb-5" src="../ourProject/assets/Images/fakeQR-01.png" width="200">
                 <h3 class="bold">หรือดาวน์โหลดได้ที่นี่</h3><br>
                 <a href="#section2" button type="button" class="btn btn-light font-weight-bold" width="50px">Download</a>
             </div>
@@ -121,43 +122,31 @@
         </div>
     </div>
 </div>
-<div class="detail-section">
+<div class="detail-section text-center">
     <div class="container">
-        <h5 class="grey-color text-center">เนื้อหาการเรียนการสอน</h5>
-        <h2 class="bold text-center">Synectics</h2>
-        <p class="text-center">การเรียนการสอนแบบซินเนคติกส์ เป็นวิธีการสอนการแก้ปัญหาอย่างสร้างสรรค์ มุ่งเน้นให้ผู้เรียนใช้จินตนาการ โดยใช้วิธีการอุปมา เปรียบเทียบ ให้ได้มาซึ่งผลลัพธ์หรือคำตอบเชิงสร้างสรรค์ แบ่งเป็น 4 ลักษณะ ดังนี้ </p>
+        <h5 class="grey-color">เนื้อหาการเรียนการสอน</h5>
+        <h2 class="bold">Synectics</h2>
+        <p>การเรียนการสอนแบบซินเนคติกส์ เป็นวิธีการ<span class="highlight-text">สอนการแก้ปัญหาอย่างสร้างสรรค์ มุ่งเน้นให้ผู้เรียนใช้จินตนาการ</span> โดยใช้วิธีการอุปมา เปรียบเทียบ ให้ได้มาซึ่งผลลัพธ์หรือคำตอบเชิงสร้างสรรค์ แบ่งเป็น 4 ลักษณะ ดังนี้ </p>
         <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="card border-0 mb-3">
-                    <img src="https://dummyimage.com/600x600/000/fff.png" class="card-img-top" alt="..">
-                    <div class="card-body text-center px-0 pb-0">
-                        <h5 class="card-title">การอุปมาอุปมัยโดยอิงตัวเอง<br>(Personal Analogy)</h5>
-                    </div>
-                </div>
+            <div class="col-md-6 col-lg-3 mb-3 pb-2">
+                <img class="mb-3" src="../ourProject/assets/Images/personal-01.png" width="150">
+                <h5 class="bold">การอุปมาอุปมัยโดยอิงตัวเอง</h5>
+                <p>(Personal Analogy)</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card-border-0 mb-3">
-                    <img src="https://dummyimage.com/600x600/000/fff.png" class="card-img-top" alt="..">
-                    <div class="card-body text-center px-0 pb-0">
-                        <h5 class="card-title">การอุปมาอุปมัยโดยตรง<br>(Direct Analogy)</h5>
-                    </div>
-                </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+                <img class="mb-3" src="../ourProject/assets/Images/compare-01.png" width="150">
+                <h5 class="bold">การอุปมาอุปมัยโดยตรง</h5>
+                <p>(Direct Analogy)</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card-border-0 mb-3">
-                    <img src="https://dummyimage.com/600x600/000/fff.png" class="card-img-top" alt="..">
-                    <div class="card-body text-center px-0 pb-0">
-                        <h5 class="card-title">การอุปมาอุปมัยโดยอิงบัญญัติ<br>(Symbolic Analogy)</h5>
-                    </div>
-                </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+                <img class="mb-3" src="../ourProject/assets/Images/conversation-01.png" width="150">
+                <h5 class="bold">การอุปมาอุปมัยโดยอิงบัญญัติ</h5>
+                <p>(Symbolic Analogy)</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="card-border-0 mb-3">
-                    <img src="https://dummyimage.com/600x600/000/fff.png" class="card-img-top" alt="..">
-                    <div class="card-body text-center px-0 pb-0">
-                        <h5 class="card-title">การอุปมาอุปมัยโดยอิงการเพ้อฝัน<br>(Fantasy Analogy)</h5>
-                    </div>
-                </div>
+            <div class="col-md-6 col-lg-3 mb-3">
+                <img class="mb-3" src="../ourProject/assets/Images/dream-01.png" width="150">
+                <h5 class="bold">การอุปมาอุปมัยโดยอิงการเพ้อฝัน</h5>
+                <p>(Fantasy Analogy)</p>
             </div>
         </div>
     </div>
@@ -165,12 +154,11 @@
 <div class="example-section text-center">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 pb-5 text-lg-left">
-                <img src="../ourProject/assets/Images/document-01-01.png" width="500">
+            <div class="col-lg-6 pb-5 text-lg-left">
+                <img class="large" src="../ourProject/assets/Images/document-01-01.png">
             </div>
-            <div class="col-lg-1"></div>
             <div class="col-lg-6 text-lg-left align-self-center">
-                <p>เมื่อเรียนแล้วสามารถใช้กิจกรรมการเรียนการสอนแบบซินเนคติกส์ (Synectics) ทั้ง 4 ลักษณะ มาประยุกต์ใช้กับการออกแบบสื่อโฆษณาประเภทต่าง ๆ ได้อย่างเหมาะสมและสร้างสรรค์ ชิ้นงานโฆษณามีความแปลกใหม่ และสามารถกระตุ้นให้เกิดความคิดสร้างสรรค์ได้</p>                    
+                <p>เมื่อเรียนแล้วสามารถใช้กิจกรรมการเรียนการสอนแบบ<br>ซินเนคติกส์ (Synectics) ทั้ง 4 ลักษณะ มาประยุกต์ใช้กับการออกแบบสื่อโฆษณาประเภทต่าง ๆ ได้อย่างเหมาะสมและสร้างสรรค์ ชิ้นงานโฆษณามีความแปลกใหม่ และสามารถกระตุ้นให้เกิดความคิดสร้างสรรค์ได้</p>                    
             </div>
         </div>
     </div>
@@ -198,15 +186,35 @@
  <a href='http://besucherzaehler.co'>Besucherzähler einbinden</a> <script type='text/javascript' src='https://whomania.com/ctr?id=a11af2fbc5018a5a0f1668b6964f2812afe9718c'></script>
             </div>
             <div class="col-md-6 text-center align-self-center text-md-right mt-2">
-                <img class="p-3" src="../ourProject/assets/Images/LOGO ภาค.png" width="170px" style="margin-right: 20px;" >
-                <img src="../ourProject/assets/Images/logo scsy-01.png" width="100">
+                <a class="navbar-brand" href="https://www.facebook.com/ect.kmutt09/"><img class="p-3" src="../ourProject/assets/Images/LOGO ภาค.png" width="170px" style="margin-right: 20px;" ></a>
+                <a class="navbar-brand" href="#top-home"><img src="../ourProject/assets/Images/logo scsy-01.png" width="100"></a>
             </div>
         </div>
     </div>
 </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

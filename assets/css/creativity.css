@@ -79,7 +79,9 @@ p{
     color: #283747;
 }
 .highlight-text{
-    background-color: #F1C40F;
+    background: linear-gradient( #24e2e2, #fdbb2d);
+    font-weight: 900;
+    color: black;
 }
 .creative-title{
     background-image: url(../Images/creativeBG.jpg) ;
@@ -139,5 +141,9 @@ p{
   @media only screen and (max-width: 600px) {
     .large {
       width: 100%;
+    }
+    .creative-title,.creative-detail,.creative-element,.important-section,.jersild-section,.conclude-section{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
   }
