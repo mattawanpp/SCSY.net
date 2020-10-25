@@ -90,14 +90,13 @@ p{
     color: black;
 }
 .creative-title{
-    background-image: url(../Images/creativeBG-01.png) ;
+    background-image: url(../Images/creative1BG-01.png) ;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
     padding: 240px 0;
-    color: white;
 }
 .box{
     background-color: white;
@@ -139,12 +138,12 @@ p{
     padding-bottom: 32px;
 }
 .important-section{
-    background-image: url(../Images/creativeDetailBG-04.png) ;
+    background-image: url(../Images/brainBG-02.png) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #E5E7E9;
-    padding: 100px;
+    background-color: white;
+    padding: 250px;
 }
 .jersild-section{
     background-color: white;

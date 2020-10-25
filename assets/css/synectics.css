@@ -135,6 +135,18 @@ h1.title{
     .large {
       width: 500px;
     }
+    .x-large {
+        width: 800px;
+      }
+      .white-box{
+        background-clip: padding-box;
+        background: white;
+        height: 380px;
+        width: 300px;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 20px;
+    }
   }
   @media only screen and (max-width: 600px) {
     .large {
@@ -142,6 +154,17 @@ h1.title{
     }
     iframe{
         width: 100%;
+    }
+    .x-large {
+        width: 100%;
+      }
+      .white-box{
+        background-clip: padding-box;
+        background: white;
+        width: 50px;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 20px;
     }
     .title-introduction,.meaning-section,.synecticsGroup-meaning,.target-section,.hypothesis-section{
         padding-left: 1rem;
@@ -154,6 +177,19 @@ h1.title{
     }
     iframe{
         width: 100%;
+        }
+        .x-large {
+            width: 100%;
+          }
+          .white-box{
+            background-clip: padding-box;
+            background: white;
+            height: auto;
+            width: 200px;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 20px;
+            margin-left: 190px;
         }
   }
   #myBtn {
@@ -185,11 +221,12 @@ h1.title{
     font-weight: 900;
     color: black;
 }
-.white-box{
+
+.blue-box{
     background-clip: padding-box;
-    background: white;
-    height: 380px;
-    width: 300px;
+    background: #BEE7F4;
+    height: auto;
+    width: 300;
     border-radius: 16px;
     padding: 20px;
     margin: 20px;

@@ -102,7 +102,7 @@ h1.title{
     padding: 80px 0;
 }
 .analogy-section{
-    background-color: #F8F9F9;
+    background-color: #F2F4F4;
     padding: 56px 0;
 }
 .card{
@@ -112,11 +112,10 @@ iframe{
     padding: 1rem 0;
 }
 .conclude-section{
-    background-image: url(../Images/concludeBG-01.jpg);
+    background-image: url(../Images/synectics3BG-04.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
     background-color: transparent;
     padding: 56px 0;
 }
@@ -127,6 +126,15 @@ iframe{
 @media only screen and (min-width: 600px) {
     .large {
       width: 500px;
+    }
+    .analogy-box{
+        background-clip: padding-box;
+        background: #F4DDA2;
+        height: auto;
+        width: 1000px;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 20px;
     }
   }
   @media only screen and (max-width: 600px) {
@@ -140,9 +148,38 @@ iframe{
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .analogy-box{
+        background-clip: padding-box;
+        background: #F4DDA2;
+        height: auto;
+        width: 100%;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 20px;
+    }
+  }
+  @media only screen and (max-width: 1330px) {
+    .large {
+      width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .psychology-section,.analogy-section,.conclude-section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .analogy-box{
+        background-clip: padding-box;
+        background: #F4DDA2;
+        height: auto;
+        width: 100%;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 20px;
+    }
   }
   hr{
-      background-color: white;
       height: 2;
       width: 50%;
   }
@@ -169,4 +206,15 @@ iframe{
   .footer-section{
     background-color: #F6C663;
     padding-bottom: 32px;
+}
+.card{
+    border-width: 6px;
+    border-color: #EEC573;
+}
+.highlight-blue{
+    background-color: #87BEDB;
+    color: black;
+    border-radius: 90px;
+    padding: 20px;
+    margin: 20px;
 }

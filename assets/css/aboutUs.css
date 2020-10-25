@@ -212,6 +212,11 @@ p{
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
+}.img-four{
+    background-image: url(../Images/op-01.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 .img-text{
     background: #fff;
