@@ -28,7 +28,7 @@
                       <a class="nav-link" href="#"></a>
                   </li>
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down"></i></a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down" id="navIcon"></i></a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="../ourProject/creativity.html">ความคิดสร้างสรรค์</a>
                           <a class="dropdown-item" href="../ourProject/synectics.html">ความรู้เบื้องต้นเกี่ยวกับ Synectics</a>
@@ -50,6 +50,7 @@
           </div>
       </div>
   </nav>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
   <div class="brucejoyce-section text-center">
     <div class="container">
         <div class="row">
@@ -67,65 +68,117 @@
     <p class="text-center">คิดว่ารูปแบบการสอนนี้มีความเชื่อพื้นฐาน 4 ประการ คือ</p>
     <div class="container">
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4 mt-5">
-                <img class=" mb-3" src="../ourProject/assets/Images/creatively-01.png" width="200">
-                <h5 class="bold font-weight-bold text-center pt-2">1. ความคิดสร้างสรรค์เกิดขึ้นเสมอ</h5>
-                <p class=" text-center">และมีความสำคัญต่อการดำรงชีวิตประจำวันของมนุษย์</p>
+            <div class="col-lg-6 col-md-6 mt-5">
+                <div class="blue-box">
+                    <img class=" mb-3" src="../ourProject/assets/Images/creatively-01.png" width="150">
+                    <h5 class="bold font-weight-bold text-center pt-2">1. ความคิดสร้างสรรค์เกิดขึ้นเสมอ</h5>
+                    <p class=" text-center">และมีความสำคัญต่อการดำรงชีวิตประจำวันของมนุษย์</p>
+                </div>
             </div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4 mt-5">
-                <img class=" mb-3" src="../ourProject/assets/Images/learning-01.png" width="200">
-                <h5 class="bold font-weight-bold text-center pt-2">2. กระบวนการของความคิดสร้างสรรค์ ไม่ใช่สิ่งที่ลึกลับซับซ้อน</h5>
-                <p class=" text-center">แต่สามารถอธิบายและฝึกฝนคนให้มีระดับความคิดสร้างสรรค์เพิ่มขึ้นได้</p>
+            <div class="col-lg-6 col-md-6 mt-5">
+                <div class="blue-box">
+                    <img class=" mb-3" src="../ourProject/assets/Images/learning-01.png" width="150">
+                    <h5 class="bold font-weight-bold text-center pt-2">2. กระบวนการของความคิดสร้างสรรค์ ไม่ใช่สิ่งที่ลึกลับซับซ้อน</h5>
+                    <p class=" text-center">แต่สามารถอธิบายและฝึกฝนคนให้มีระดับความคิดสร้างสรรค์เพิ่มขึ้นได้</p>
+                </div>
             </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4">
-                <img class=" mb-3" src="../ourProject/assets/Images/brain2-01.png" width="200">
-                <h5 class="bold font-weight-bold text-center pt-2">3. การคิดสร้างสรรค์ที่เกิดในศาสตร์วิชาการสาขาต่าง ๆ มีลักษณะคล้ายคลึงกัน</h5>
-                <p class=" text-center">ไม่ว่าจะเป็นด้านศิลปะ วิทยาศาสตร์ คณิตศาสตร์ หรือวิศวกรรมศาสตร์ ศาสตร์เหล่านี้จำเป็นต้องใช้กระบวนการทางสติปัญญาเข้ามาเกี่ยวข้องในการคิดสร้างสรรค์ทั้งสิ้น</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mt-5">
+                <div class="blue-box">
+                    <img class=" mb-3" src="../ourProject/assets/Images/brain2-01.png" width="150">
+                    <h5 class="bold font-weight-bold text-center pt-2">3. การคิดสร้างสรรค์ที่เกิดในศาสตร์วิชาการสาขาต่าง ๆ มีลักษณะคล้ายคลึงกัน</h5>
+                    <p class=" text-center">ไม่ว่าจะเป็นด้านศิลปะ วิทยาศาสตร์ คณิตศาสตร์ หรือวิศวกรรมศาสตร์ ศาสตร์เหล่านี้จำเป็นต้องใช้กระบวนการทางสติปัญญาเข้ามาเกี่ยวข้องในการคิดสร้างสรรค์ทั้งสิ้น</p>
+                </div>
             </div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4">
-                <img class=" mb-3" src="../ourProject/assets/Images/team-01.png" width="200">
-                <h5 class="bold font-weight-bold text-center pt-2">4. การคิดสร้างสรรค์ของคนคนเดียวหรือกลุ่มคนมีลักษณะใกล้เคียงกันมาก</h5>
-                <p class=" text-center">สมศักดิ์ ภู่วิภาดาวรรธ์ (2544) กล่าวว่า การสอนแบบ Synectics ตั้งอยู่บนพื้นฐานของการนำกระบวนการคิดสร้างสรรค์ คือการคิดเชื่อมโยงหาความสัมพันธ์ที่ออกมาในรูปของการเปรียบเทียบมาใช้</p>
+            <div class="col-lg-6 col-md-6 mt-5">
+                <div class="blue-box">
+                    <img class=" mb-3" src="../ourProject/assets/Images/team-01.png" width="150">
+                    <h5 class="bold font-weight-bold text-center pt-2">4. การคิดสร้างสรรค์ของคนคนเดียวหรือกลุ่มคนมีลักษณะใกล้เคียงกันมาก</h5>
+                    <p class=" text-center">สมศักดิ์ ภู่วิภาดาวรรธ์ (2544) กล่าวว่า การสอนแบบ Synectics ตั้งอยู่บนพื้นฐานของการนำกระบวนการคิดสร้างสรรค์ คือการคิดเชื่อมโยงหาความสัมพันธ์ที่ออกมาในรูปของการเปรียบเทียบมาใช้</p>
+                </div>
             </div>
-            <div class="col-lg-1"></div>
         </div>
     </div>
 </div>
 <div class="learning-section text-center">
     <div class="container">
         <div class="row">
+            <div class="col-lg-1"></div>
             <div class="col-lg-5 align-self-center">
                 <p>การสอนด้วยกิจกรรมซินเนคติกส์นี้ มีลักษณะสำคัญที่เป็นจุดเด่นคือ การนำเอาการเปรียบเทียบกันอย่างละเอียดและเป็นระบบที่ดี เมื่อการเปรียบเทียบมาถึงจุดหนึ่งผู้เรียนก็จะสามารถเสนอบทเรียนหรือผลงานของบทเรียนในมิติที่แตกต่างออกไปจากกรอบและแนวคิดเดิม ๆ ได้อย่างเกิดผล</p>
-                <h5 class="bold">กรกนก ธูปประสม (2537) กล่าวว่า</h5>
-                <p>ซินเนคติกส์เป็นกิจกรรมที่ฉุดความคิดที่มีอยู่ในตัวของผู้เรียนให้โลดแล่นออกมา ยิ่งถ้ามีการส่งเสริมความคิดสร้างสรรค์แก่เด็กตั้งแต่เยาว์วัย ก็จะยิ่งได้ผลดีมากขึ้นเท่านั้น โดยเฉพาะอย่างยิ่งในช่วงก่อนวัยเรียนหรือในช่วง 5-6 ขวบปีแรกของชีวิต เป็นระยะที่เด็กมีจินตนาการสูง ศักยภาพด้านการสร้างสรรค์กำลังพัฒนา (Torrance, 1965)</p>
             </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <img class="large" src="../ourProject/assets/Images/kanokpart-01.png">
+            <div class="col-lg-5 align-self-center">
+                <p><span class="bold">กรกนก ธูปประสม (2537)</span> กล่าวว่าซินเนคติกส์เป็นกิจกรรมที่ฉุดความคิดที่มีอยู่ในตัวของผู้เรียนให้โลดแล่นออกมา ยิ่งถ้ามีการส่งเสริมความคิดสร้างสรรค์แก่เด็กตั้งแต่เยาว์วัย ก็จะยิ่งได้ผลดีมากขึ้นเท่านั้น โดยเฉพาะอย่างยิ่งในช่วงก่อนวัยเรียนหรือในช่วง 5-6 ขวบปีแรกของชีวิต เป็นระยะที่เด็กมีจินตนาการสูง ศักยภาพด้านการสร้างสรรค์กำลังพัฒนา (Torrance, 1965)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <img class="x-large right text-center" src="../ourProject/assets/Images/kanokpart-01.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <p class="highlight-blue text-center align-self-center">การพัฒนาความคิดสร้างสรรค์อย่างต่อเนื่องกันเป็นลำดับ จะเป็นการเริ่มต้นที่ดี<br>สำหรับการพัฒนาความคิดสร้างสรรค์ในวัยต่อมา<br>กิจกรรมซินเนคติกส์เป็นกิจกรรมที่ดีรูปแบบหนึ่งในการนำไปพัฒนาความคิดสร้างสรรค์<br>เพราะการใช้กิจกรรมเปรียบเทียบจะช่วบกระตุ้นจินตนาการของผู้เรียน ช่วยให้สามารถถ่ายทอดความรู้สึก ความคิดแสวงหาสิ่งใหม่ มีความมั่นใจกับความคิดที่แปลกแหวกแนว ยอมรับความคิดของตนเองและผู้อื่น</p>
             </div>
         </div>
     </div>
 </div>
-<div class="conclude-section">
+<div class="shadow-lg footer-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <h5 class="text-center align-self-center">การพัฒนาความคิดสร้างสรรค์อย่างต่อเนื่องกันเป็นลำดับ จะเป็นการเริ่มต้นที่ดี<br>สำหรับการพัฒนาความคิดสร้างสรรค์ในวัยต่อมา<br>กิจกรรมซินเนคติกส์เป็นกิจกรรมที่ดีรูปแบบหนึ่งในการนำไปพัฒนาความคิดสร้างสรรค์<br>เพราะการใช้กิจกรรมเปรียบเทียบจะช่วบกระตุ้นจินตนาการของผู้เรียน ช่วยให้สามารถถ่ายทอดความรู้สึก ความคิดแสวงหาสิ่งใหม่ มีความมั่นใจกับความคิดที่แปลกแหวกแนว ยอมรับความคิดของตนเองและผู้อื่น</h5>
+            <div class="col-md-6 text-center text-md-left pt-3">
+                <ul class="nav justify-content-center justify-content-md-start">
+                    <li class="nav-item">
+                        <a href="#" class="my-nav nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/learningClip.html" class="my-nav nav-link">VDO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/portfolio.html" class="my-nav nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/aboutUs.html" class="my-nav nav-link">About Us</a>
+                    </li>
+                </ul>
+                <p class="white-text mt-2">ภาควิชาเทคโนโลยีและสื่อสารการศึกษา<br>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <script type="text/javascript" src="https://freehitcounters.org/count/7pzg"></script><br>
+ <a href='http://besucherzaehler.co'>Besucherzähler einbinden</a> <script type='text/javascript' src='https://whomania.com/ctr?id=a11af2fbc5018a5a0f1668b6964f2812afe9718c'></script>
             </div>
-            <div class="col-lg-2"></div>
+            <div class="col-md-6 text-center align-self-center text-md-right mt-2">
+                <a class="navbar-brand" href="https://www.facebook.com/ect.kmutt09/"><img class="p-3" src="../ourProject/assets/Images/LOGO ภาค.png" width="170px" style="margin-right: 20px;" ></a>
+                <a class="navbar-brand" href="#top-home"><img src="../ourProject/assets/Images/logo scsy-01.png" width="100"></a>
+            </div>
         </div>
     </div>
 </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

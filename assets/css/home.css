@@ -1,23 +1,96 @@
 html{
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
-@media screen and (max-device-width: 960px) {
-    font-size: 14px;
-}
-@media screen and (max-device-width: 480px) {
-    font-size: 13px;
+.container{
+    width: 100%;
+    height: auto;
 }
 #container{
     overflow-y: scroll;
+}
+.dropdown-toggle::after {
+    display: none !important;
 }
 ::-moz-selection{
     background-color: #0a0902;
 }
 ::selection{
-    background-color: #F1C40F;
+    background-color: #EDB835;
     color: whitesmoke;
+}
+.btn.animatedHover{
+    border: 2px solid #EDB835;
+    background: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 12px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn2{
+    color: #EDB835;
+}
+.btn2:hover{
+    color: black;
+}
+.btn.animatedHover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #F1C40F;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn2:hover::before{
+    height: 160%;
+}
+
+.btn.whiteHover{
+    border: 2px solid white;
+    background: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 12px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn3{
+    color: white;
+}
+.btn3:hover{
+    color: #06a0b0;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #06a0b0;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn3::before{
+    bottom: 0;
+    border-radius: 0 0 50% 50%;
+}
+.btn3:hover::before{
+    height: 160%;
 }
 nav{
     font-family: 'Prompt', sans-serif;
@@ -33,9 +106,7 @@ nav{
     margin: 3px;
     color: #F3CA72;
 }
-.dropdown-toggle::after {
-    display: none !important;
-}
+
 h1,h2,h3,h4,h5,h6,p,.btn,.my-nav{
     font-family: 'Prompt', sans-serif;
     font-weight: 100;
@@ -63,34 +134,20 @@ p{
     font-weight: 800;
 }
 .title-section{
-    max-width: 100%;
-}
-.title-section{
-    background-image: url(../Images/bgTitle-01.png);
+    background-image: url(../Images/mainBG-01.png);
     background-color: transparent;
-    padding: 160px 0;
-}
-.title-section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #566573;
-    
 }
-.btn{
-    width: 230px;
-    height: 50px;
-    border-radius: 16px;
-    font-size: 16px;
-    border-width: 2px;
-}
-.subtext{
+.title-section{
     color: #566573;
+    padding: 200px 0;
 }
 h1.title{
-    font-size: 105px;
+    font-size: 80px;
     font-weight: 700;
-    background: -webkit-linear-gradient(#79C5D1, #3C9FAA);
+    background: -webkit-linear-gradient(#136a8a, #267871);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -112,7 +169,8 @@ h1.title{
 
 }
 .introduce-section{
-    background-color: white;
+    background-image: url(../Images/mainBG-02.png);
+    background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,75 +183,156 @@ h1.title{
     background-repeat: no-repeat;
     background-size: cover;
     color: #283747;
-    padding: 80px 0;
+    padding: 56px 0;
 }
-.skill-section,
-.example-section{
-    background-color: #F2F3F4;
+.skill-section{
+    background-color: white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 80px 0; 
+    padding-bottom: 56px; 
+}
+.example-section{
+    background-color: #EAE9E6;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+#curve{
+    width: 100%;
 }
 .download-section{
     position: relative;
     width: 100%;
-    color: white;
-    background: url("../img/bg-pattern.png"), #7b4397;
-    background: url("../img/bg-pattern.png"), linear-gradient( #000428, #004e92);
+    background-image: url(../Images/downloadBG-02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .footer-section{
-    background-color: #7AC4D0;
+    background-color: #F6C663;
+    padding-bottom: 32px;
 }
   @media only screen and (min-width: 600px) {
     .large {
       width: 500px;
     }
+    .x-large {
+        width: 800px;
+        margin-left: -30;
+      }
     .device-responsive{
         width: 900px;
         position: relative;
+        margin-left: -300px;
     }
     .text-margin{
         margin-top : 50px 0;
     }
+    .skill-section{
+        padding-top: 56px;
+    }
+    .right{
+        margin-left: 100px;
+    }
+    iframe{
+        width: 500px;
+        height: 300px;
+        }
   }
   @media only screen and (max-width: 600px) {
     .large {
       width: 100%;
     }
+    .x-large {
+        width: 100%;
+      }
     .device-responsive{
         width: 100%;
     }
+    .skill-section{
+        padding-top: 56px;
+        background-size: auto;
+    }
+    iframe{
+        width: 100%;
+        }
+        .right{
+            margin-left: 0px;
+        }
   }
   @media only screen and (max-width: 1590px) {
     .large {
       width: 100%;
     }
+    .x-large {
+        width: 100%;
+      }
     .device-responsive{
         width: 700px;
+        margin-left: 0px;
     }
+    h1.title{
+        font-size: 60px;
+    }
+    iframe{
+        width: 100%;
+        }
+        .right{
+            margin-left: 0px;
+        }
   }
   @media only screen and (max-width: 1335px) {
     .large {
       width: 100%;
     }
+    .x-large {
+        width: 100%;
+      }
     .device-responsive{
         width: 600px;
     }
+    .skill-section{
+        padding-top: 56px;
+        background-size: auto;
+    }
+    iframe{
+        width: 100%;
+        }
+        .right{
+            margin-left: 0px;
+        }
   }
   @media only screen and (max-width: 1027px) {
     .large {
       width: 100%;
     }
+    .x-large {
+        width: 100%;
+      }
     .device-responsive{
         width: 100%;
     }
     iframe{
     width: 100%;
     }
+    .right{
+        margin-left: 0px;
+    }
     .main-title,.introduce-section,.skill-section,.download-section,.detail-section,.example-section{
     padding-left: 1rem;
     padding-right: 1rem;
+    }
+    .skill-section{
+        padding-top: 56px;
+        background-size: auto;
+    }
+    .introduce-section{
+        padding-top: 40px;
+        padding-bottom: 56px;
     }
   }
   .download-section{
@@ -209,14 +348,54 @@ h1.title{
     border: none;
     outline: none;
     background-color: #f6c663;
-    opacity: 0.7;
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    transition: 0.5s;
   }
   
   #myBtn:hover {
     background-color: #79c2ce;
-    opacity: 0.7;
   }
+  .box{
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 5px 7px 10px #888888;
+    padding: 16px;
+    margin: 20px;
+}
+.blue-box{
+    background-color: #BEE7F4;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 20px;
+}
+.grey-box{
+    background-color: #E5E7E9;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 20px;
+}
+.yellow-box{
+    background-clip: padding-box;
+    background: #F4DDA2;
+    height: 300px;
+    width: 200px;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px;
+}
+.small{
+    font-size: 14px;
+}
+.blue-head{
+    background-clip: padding-box;
+    background: #BEE7F4;
+    height: 60px;
+    width: 100%px;
+    border-radius: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+}

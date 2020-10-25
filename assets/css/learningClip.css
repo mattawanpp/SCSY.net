@@ -1,4 +1,6 @@
 html{
+    padding: 0;
+    margin: 0;
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
 }
@@ -22,7 +24,7 @@ nav{
 .nav-item{
     margin-right: 20px;
 }
-i{
+#navIcon{
     margin: 3px;
     color: #F3CA72;
 }
@@ -51,11 +53,14 @@ h1,h2,h3,h4,h5,h6,p{
     background-size: cover;
     
 }
-.btn{
-    width: 230px;
-    height: 50px;
+.title-section.btn{
+    height: 80px;
     border-radius: 16px;
     font-size: 16px;
+    padding: 1rem 0;
+}
+.student-section{
+    padding: 56px 0;
 }
 
 .subtext{
@@ -83,6 +88,7 @@ h1.title{
 }
 .highlight-text{
     background-color: #F1C40F;
+    padding-bottom: 32px;
 }
 .title-section{
     width: 100%;
@@ -96,9 +102,6 @@ h1.title{
     padding: 56px 0;
     background-color: #F8F9F9;
 }
-iframe{
-    width: 70%;
-}
 .card{
     border-radius: 16px;
 }
@@ -106,8 +109,61 @@ iframe{
     color: #ABB2B9;
 }
 .traveling-section{
-    max-width: 100%;
     scroll-behavior: smooth;
     padding: 56px 0;
     background-color: #C6ECF6;
+}
+}
+@media only screen and (min-width: 600px) {
+  .large {
+    width: 500px;
+  }
+  .device-responsive{
+      width: 900px;
+      position: relative;
+  }
+  .text-margin{
+      margin-top : 50px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .large {
+    width: 100%;
+  }
+  .device-responsive{
+      width: 100%;
+  }
+  iframe{
+    width: 100%;
+    }
+    .title-section,.vdo-section,.traveling-section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+    .card{
+        margin-left: 16px;;
+    }
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f6c663;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #79c2ce;
+  }
+  .footer-section{
+    background-color: #F6C663;
 }

@@ -1,6 +1,8 @@
 html{
     font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 #container{
     overflow-y: scroll;
@@ -22,7 +24,7 @@ nav{
 .nav-item{
     margin-right: 20px;
 }
-i{
+#navIcon{
     margin: 3px;
     color: #F3CA72;
 }
@@ -85,7 +87,11 @@ h1.title{
     background-color: #F1C40F;
 }
 .introduce-section{
-    background-color: #D6EAF8;
+    background-image: url(../Images/synectics3BG-02.png);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 240px 0;
 }
 .psychology-section{
@@ -140,3 +146,27 @@ iframe{
       height: 2;
       width: 50%;
   }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f6c663;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #79c2ce;
+  }
+  .footer-section{
+    background-color: #F6C663;
+    padding-bottom: 32px;
+}

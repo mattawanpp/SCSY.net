@@ -29,7 +29,7 @@
                       <a class="nav-link" href="#"></a>
                   </li>
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down"></i></a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down" id="navIcon"></i></a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="../ourProject/creativity.html">ความคิดสร้างสรรค์</a>
                           <a class="dropdown-item" href="../ourProject/synectics.html">ความรู้เบื้องต้นเกี่ยวกับ Synectics</a>
@@ -51,6 +51,7 @@
           </div>
       </div>
   </nav>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
   <div class="title-introduction">
     <div class="container">
         <div class="row">
@@ -63,20 +64,8 @@
         </div>
     </div>
 </div>
-<div class="meaning-section" id="meaning">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 text-center text-lg-left align-self-center col-xs-12 order-lg-1 order-2" >
-                <p>กอร์ดอน (Gordon, 1972) กล่าวว่าซินเนคติกส์<span class="highlight-text">เป็นกิจกรรมที่มุ่งเน้นการพัฒนาความคิดสร้างสรรค์ให้กับผู้เรียน โดยการนำเอาการเปรียบเทียบ</span>มาให้นักเรียนได้พิจารณาและเปรียบเทียบอย่างละเอียด และเป็นระบบ เมื่อกการเปรียบเทียบมาถึงจุดหนึ่ง ผู้เรียนจะสามารถเสนอบทเรียนหรืองานของเขาในมิติที่แตกต่างกันออกไปจากกรอบแนวคิดเดิม ๆ ได้อย่างเกิดผล เป้าหมายหลักของการสอนคือการฝึกฝนให้ผู้เรียนเกิดความคิดสร้างสรรค์ในบทเรียนในการแก้ปัญหาหรือการคิดค้นสิ่งใหม่ ๆ ขึ้นมาโดยการใช้การเปรียบเทียบมาเป็นเครื่องมือในการสร้างสรรค์</p>
-            </div>
-            <div class="col-lg-6 order-lg-2 order-1 text-center text-lg-right" style="padding: 42px 0;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/v02MRRWTUr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="synecticsGroup-meaning text-center">
-    <h2 class="bold">ซินเนคติกส์ (Synectics)</h2>
+<div class="synecticsGroup-meaning text-center" id="meaning">
+    <h2 class="bold highlight-grey">ซินเนคติกส์ (Synectics)</h2>
     <div class="container">
         <div class="row">
             <div class="col-lg-1"></div>
@@ -101,53 +90,117 @@
         </div>
     </div>
 </div>
+<div class="meaning-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-lg-left align-self-center col-xs-12 order-lg-1 order-2" >
+                <h3 class="bold text-center highlight-text">กอร์ดอน (Gordon, 1972)</h3>
+                <p>กล่าวว่าซินเนคติกส์เป็นกิจกรรมที่มุ่งเน้นการพัฒนาความคิดสร้างสรรค์ให้กับผู้เรียน โดยการนำเอาการเปรียบเทียบ</span>มาให้นักเรียนได้พิจารณาและเปรียบเทียบอย่างละเอียด และเป็นระบบ เมื่อกการเปรียบเทียบมาถึงจุดหนึ่ง ผู้เรียนจะสามารถเสนอบทเรียนหรืองานของเขาในมิติที่แตกต่างกันออกไปจากกรอบแนวคิดเดิม ๆ ได้อย่างเกิดผล เป้าหมายหลักของการสอนคือการฝึกฝนให้ผู้เรียนเกิดความคิดสร้างสรรค์ในบทเรียนในการแก้ปัญหาหรือการคิดค้นสิ่งใหม่ ๆ ขึ้นมาโดยการใช้การเปรียบเทียบมาเป็นเครื่องมือในการสร้างสรรค์</p>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 text-center text-lg-right" style="padding: 42px 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ESF-F68CC74" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="target-section text-center">
     <h3 class="bold mb-5">การค้นคว้าของกลุ่ม Synectics<br>มีจุดมุ่งหมาย</h3>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 align-self-center order-2 order-lg-1">
-                <p class="text-lg-right">เพื่อค้นหากลไกทางจิตวิทยา ซึ่งเป็นพื้นฐานของการคิดเชิงสร้างสรรค์ โดยกลุ่มซินเนคติกส์เชื่อว่า ถ้านำผู้มีความสามารถทางการคิดสร้างสรรค์อยู่แล้วมาร่วมกันแก้ปัญหา ก็ย่อมที่จะกำหนดปัญหาต่าง ๆ ได้รอบคอบยิ่งขึ้น และในขณะเดียวกันก็สามารถเสนอผลการแก้ปัญหาได้ดีเช่นเดียวกันด้วย เพราะการรวมกันจะเป็นการกระตุ้นให้แต่ละคนเสนอความคิดโดยการพูด และแสดงความรู้สึกทางอารมณ์อย่างเปิดเผยต่อปัญหาที่กำลังเผชิญอยู่ในขณะนั้น และยิ่งการรวมกลุ่มบุคคลมาจากหลายอาชีพ และหลากหลายในประสบการณ์จึงทำให้มีการกำหนดปัญหาได้อย่างจะแจ้ง และมีการวิเคราะห์ได้อย่างถี่ถ้วน</p>
+                <p>เพื่อค้นหากลไกทางจิตวิทยา ซึ่งเป็นพื้นฐานของการคิดเชิงสร้างสรรค์ โดยกลุ่มซินเนคติกส์เชื่อว่า ถ้านำผู้มีความสามารถทางการคิดสร้างสรรค์อยู่แล้วมาร่วมกันแก้ปัญหา ก็ย่อมที่จะกำหนดปัญหาต่าง ๆ ได้รอบคอบยิ่งขึ้น และในขณะเดียวกันก็สามารถเสนอผลการแก้ปัญหาได้ดีเช่นเดียวกันด้วย เพราะการรวมกันจะเป็นการกระตุ้นให้แต่ละคนเสนอความคิดโดยการพูด และแสดงความรู้สึกทางอารมณ์อย่างเปิดเผยต่อปัญหาที่กำลังเผชิญอยู่ในขณะนั้น และยิ่งการรวมกลุ่มบุคคลมาจากหลายอาชีพ และหลากหลายในประสบการณ์จึงทำให้มีการกำหนดปัญหาได้อย่างจะแจ้ง และมีการวิเคราะห์ได้อย่างถี่ถ้วน</p>
+                <p>ในอีกประเด็นของการคิดกันเป็นกลุ่มจะทำให้เกิดแนวทางการพิจารณาปัญหาในแนวแปลกและใหม่ต่อปัญหาเดิม เป็นการเพิ่มโอกาสในการหลีกเลี่ยง การกำหนด และแก้ปัญหาตามความเคยชิน</p>
             </div>
             <div class="col-lg-6 text-lg-left align-self-center order-1 order-lg-2">
                 <img class="large" src="../ourProject/assets/Images/teamwork-01.png">
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6 align-self-center">
-                <img class="large" src="../ourProject/assets/Images/teamlead-01.png">
-            </div>
-            <div class="col-lg-6 align-self-center text-lg-left">
-                <p>ในอีกประเด็นของการคิดกันเป็นกลุ่มจะทำให้เกิดแนวทางการพิจารณาปัญหาในแนวแปลกและใหม่ต่อปัญหาเดิม เป็นการเพิ่มโอกาสในการหลีกเลี่ยง การกำหนด และแก้ปัญหาตามความเคยชิน</p>
-            </div>
-        </div>
     </div>
 </div>
+<section>
+    <div style="height: 150px; overflow: hidden;" ><svg id="curve" viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C231.65,132.72 259.87,-4.44 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #F4DDA2;"></path></svg></div>
+</section>
 <div class="hypothesis-section text-center">
     <h3 class="bold mt-2">จากการค้นคว้าของกลุ่ม Synectics</h3>
     <p class="mb-5">ทำให้ได้สมมติฐานที่พอสรุปได้ดังนี้</p>
     <div class="container">
         <div class="row">
             <div class="col-lg-4 align-self-center">
-                <img class="mb-5" src="../ourProject/assets/Images/upper-01.png" width="200"> 
-                <h4 class="bold">1. ประสิทธิภาพทางความคิดของมนุษย์​</h4>
-                <p>สามารถเพิ่มขึ้นอย่างเห็นได้ชัดถ้าเขาเหล่านั้นมีความเข้าใจขบวนการทางจิตวิทยาที่กำลังดำเนินการอยู่ในขณะนั้น</p>
+                <div class="white-box">
+                    <img class="mb-2" src="../ourProject/assets/Images/upper-01.png" width="120"> 
+                    <h4 class="bold">1. ประสิทธิภาพทางความคิดของมนุษย์​</h4>
+                    <p>สามารถเพิ่มขึ้นอย่างเห็นได้ชัดถ้าเขาเหล่านั้นมีความเข้าใจขบวนการทางจิตวิทยาที่กำลังดำเนินการอยู่ในขณะนั้น</p>
+                </div>
             </div>
             <div class="col-lg-4 align-self-center">
-                <img class="mb-5" src="../ourProject/assets/Images/feeling-01.png" width="200"> 
-                <h4 class="bold">2. ในขบวนการคิดสร้างสรรค์​</h4>
-                <p>องค์ประกอบความคิดทางอารมณ์มีความสำคัญมากกว่าทางสติปัญญาของความฉลาดเชิงเหตุผล</p>
+                <div class="white-box">
+                    <img class="mb-2" src="../ourProject/assets/Images/feeling-01.png" width="120"> 
+                    <h4 class="bold">2. ในขบวนการคิดสร้างสรรค์​</h4>
+                    <p>องค์ประกอบความคิดทางอารมณ์มีความสำคัญมากกว่าทางสติปัญญาของความฉลาดเชิงเหตุผล</p>
+                </div>
             </div>
             <div class="col-lg-4 align-self-center">
-                <img class="mb-5" src="../ourProject/assets/Images/system-01.png" width="200"> 
-                <h4 class="bold">3. องค์ประกอบทางความคิดทางอารมณ์ที่ดูเหมือนไร้เหตุผล​​</h4>
-                <p>เมื่อมีการทำความเข้าใจอย่างมีระบบแล้ว ย่อมสามารถปรับเปลี่ยนไปสู่ขบวนการแก้ปัญหาที่สร้างผลสำเร็จในสถานการณ์ปัจจุบันนั้น ๆ ได้</p>
+                <div class="white-box">
+                    <img class="mb-2" src="../ourProject/assets/Images/system-01.png" width="120"> 
+                    <h4 class="bold">3. องค์ประกอบทางความคิดทางอารมณ์ที่ดูเหมือนไร้เหตุผล​​</h4>
+                    <p>เมื่อมีการทำความเข้าใจอย่างมีระบบแล้ว ย่อมสามารถปรับเปลี่ยนไปสู่ขบวนการแก้ปัญหาที่สร้างผลสำเร็จในสถานการณ์ปัจจุบันนั้น ๆ ได้</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="shadow-lg footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left pt-3">
+                <ul class="nav justify-content-center justify-content-md-start">
+                    <li class="nav-item">
+                        <a href="#" class="my-nav nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/learningClip.html" class="my-nav nav-link">VDO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/portfolio.html" class="my-nav nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/aboutUs.html" class="my-nav nav-link">About Us</a>
+                    </li>
+                </ul>
+                <p class="white-text mt-2">ภาควิชาเทคโนโลยีและสื่อสารการศึกษา<br>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <script type="text/javascript" src="https://freehitcounters.org/count/7pzg"></script><br>
+ <a href='http://besucherzaehler.co'>Besucherzähler einbinden</a> <script type='text/javascript' src='https://whomania.com/ctr?id=a11af2fbc5018a5a0f1668b6964f2812afe9718c'></script>
+            </div>
+            <div class="col-md-6 text-center align-self-center text-md-right mt-2">
+                <a class="navbar-brand" href="https://www.facebook.com/ect.kmutt09/"><img class="p-3" src="../ourProject/assets/Images/LOGO ภาค.png" width="170px" style="margin-right: 20px;" ></a>
+                <a class="navbar-brand" href="#top-home"><img src="../ourProject/assets/Images/logo scsy-01.png" width="100"></a>
             </div>
         </div>
     </div>
 </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

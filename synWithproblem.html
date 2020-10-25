@@ -28,7 +28,7 @@
                       <a class="nav-link" href="#"></a>
                   </li>
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down"></i></a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down" id="navIcon"></i></a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="../ourProject/creativity.html">ความคิดสร้างสรรค์</a>
                           <a class="dropdown-item" href="../ourProject/synectics.html">ความรู้เบื้องต้นเกี่ยวกับ Synectics</a>
@@ -50,20 +50,25 @@
           </div>
       </div>
   </nav>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
   <div class="introduce-section text-center">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 text-lg-left mb-3">
-                <img class="large" src="../ourProject/assets/Images/mainProblem-01.png">
-            </div>
-            <div class="col-lg-6 align-self-center text-lg-left">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
                 <h3 class="bold" >ขบวนการแก้ปัญหาใด ๆ</h3>
                 <h5 class="grey-color">ก่อนที่จะบรรลุผลในการได้มาซึ่งคำตอบ</h5>
                 <p>จำเป็นที่ผู้เแก้ปัญหานั้น ๆ จะต้องกำหนดปัญหาให้ชัดเจน หรือทำความเข้าใจปัญหาให้ถ่องแท้เสียก่อน ใช้ขบวนการของความคิดที่เรียกกันโดยทั่วไปว่าการวิเคราะห์ปัญหา การวิเคราะห์มีความชัดเจนเท่าใด ก็จะทำให้มีผลในการได้รับคำตอบได้เร็วขึ้นเท่านั้น</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <img class="large" src="../ourProject/assets/Images/mainProblem-01.png">
+            </div>
+        </div>
     </div>
-</div>
+  </div>
 <div class="psychology-section">
     <h4 class="bold text-center p-1">กลุ่ม Synectics ได้เสนอขั้นตอนการวิเคราะห์</h4>
     <h5 class="grey-color text-center p-1">ปัญหาเชิงจิตวิทยาไว้ 2 ขั้นตอนคือ</h5>
@@ -153,9 +158,58 @@
         </div>
     </div>
 </div>
+<div class="shadow-lg footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left pt-3">
+                <ul class="nav justify-content-center justify-content-md-start">
+                    <li class="nav-item">
+                        <a href="#" class="my-nav nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/learningClip.html" class="my-nav nav-link">VDO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/portfolio.html" class="my-nav nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/aboutUs.html" class="my-nav nav-link">About Us</a>
+                    </li>
+                </ul>
+                <p class="white-text mt-2">ภาควิชาเทคโนโลยีและสื่อสารการศึกษา<br>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <script type="text/javascript" src="https://freehitcounters.org/count/7pzg"></script><br>
+ <a href='http://besucherzaehler.co'>Besucherzähler einbinden</a> <script type='text/javascript' src='https://whomania.com/ctr?id=a11af2fbc5018a5a0f1668b6964f2812afe9718c'></script>
+            </div>
+            <div class="col-md-6 text-center align-self-center text-md-right mt-2">
+                <a class="navbar-brand" href="https://www.facebook.com/ect.kmutt09/"><img class="p-3" src="../ourProject/assets/Images/LOGO ภาค.png" width="170px" style="margin-right: 20px;" ></a>
+                <a class="navbar-brand" href="#top-home"><img src="../ourProject/assets/Images/logo scsy-01.png" width="100"></a>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

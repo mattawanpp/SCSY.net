@@ -28,7 +28,7 @@
                       <a class="nav-link" href="#"></a>
                   </li>
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down"></i></a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course<i class="fas fa-angle-down" id="navIcon"></i></a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="../ourProject/creativity.html">ความคิดสร้างสรรค์</a>
                           <a class="dropdown-item" href="../ourProject/synectics.html">ความรู้เบื้องต้นเกี่ยวกับ Synectics</a>
@@ -50,13 +50,14 @@
           </div>
       </div>
   </nav>
-  <div class="creative-title">
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+  <div class="creative-title" id="top-home">
     <div class="container">
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8 mt-1 text-center">
                 <h3 class="bold">การเรียนการสอนแบบซินเนคติกส์ (Synectics)</h3>
-                <p class="white-color">จะช่วยในเรื่องของการพัฒนาสิ่งใหม่ ๆ ด้วยการคิดดัดแปลง ปรุงแต่งจากความคิดเดิมผสมผสานกันให้เกิดเป็นสิ่งใหม่รวมทั้งการประดิษฐ์คิดค้นพบสิ่งต่าง ๆ ตลอดจนวิธีการคิดทฤษฎีหลักการได้สำเร็จ และในเรื่องของการคิดแก้ปัญหาอย่างเป็นระบบ โดยทั้งหมดที่กล่าวมาจะต้องอาศัยความคิดสร้างสรรค์ทั้งสิ้น ดังนั้นการเรียนการสอนแบบซินเนคติกส์ จะช่วยให้ผู้เรียนได้ฝึกการคิดอย่างสร้างสรรค์เพื่อนำไปประยุกต์ใช้ในการทำงาน และชีวิตประจำวันต่อไป</p>
+                <p>จะช่วยในเรื่องของการพัฒนาสิ่งใหม่ ๆ ด้วยการคิดดัดแปลง ปรุงแต่งจากความคิดเดิมผสมผสานกันให้เกิดเป็นสิ่งใหม่รวมทั้งการประดิษฐ์คิดค้นพบสิ่งต่าง ๆ ตลอดจนวิธีการคิดทฤษฎีหลักการได้สำเร็จ และในเรื่องของการคิดแก้ปัญหาอย่างเป็นระบบ โดยทั้งหมดที่กล่าวมาจะต้องอาศัยความคิดสร้างสรรค์ทั้งสิ้น ดังนั้นการเรียนการสอนแบบซินเนคติกส์ จะช่วยให้ผู้เรียนได้ฝึกการคิดอย่างสร้างสรรค์เพื่อนำไปประยุกต์ใช้ในการทำงาน และชีวิตประจำวันต่อไป</p>
             </div>
             <div class="col-lg-2"></div>
         </div>
@@ -65,13 +66,13 @@
 <div class="creative-detail text-center">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <img class="large" src="../ourProject/assets/Images/gordonPath-01.png" width="500">
+            <div class="col-lg-5 align-self-center">
+                <h4 class="bold highlight-blue">ความคิดสร้างสรรค์ (Creative Thinking)</h4>
+                <p>กิลฟอร์ด (Guilford,1959) กล่าวว่า ความคิดสร้างสรรค์เป็นความสามารถทางสมองที่จะคิดได้กว้างไกลหลายทิศทาง ซึ่งลักษณะความคิดเช่นนี้ จะนำไปสู่การคิดประดิษฐ์แปลกใหม่ รวมถึงการคิดค้นพบวิธีการแก้ปัญหาได้สำเร็จ</p>
             </div>
-            <div class="col-lg-6 text-lg-left align-self-center">
-                <p>ในการเรียนการสอนซินเนคติกส์ (Synectics) นั้นจำเป็นจะต้องอาศัย</p>
-                <h3 class="bold">ความคิดสร้างสรรค์ (Creative Thinking)</h3>
-                <p>กิลฟอร์ด (Guilford,1959) กล่าวว่า ความคิดสร้างสรรค์เป็น<span class="highlight-text">ความสามารถทางสมองที่จะคิดได้กว้างไกลหลายทิศทาง</span> ซึ่งลักษณะความคิดเช่นนี้ จะนำไปสู่การคิดประดิษฐ์แปลกใหม่ รวมถึงการคิดค้นพบวิธีการแก้ปัญหาได้สำเร็จ</p>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 text-lg-right">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VdXyVrlUMCs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -121,18 +122,24 @@
 <div class="important-section text-center">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12 order-1 text-sm-center" style="padding: 48px 0;">
-                <img class="large" src="../ourProject/assets/Images/problemSolving-01-01.png">
-            </div>
-            <div class="col-lg-6 text-lg-left align-self-center order-2 text-sm-center">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
                 <p class="white-color">ความคิดสร้างสรรค์ เป็นวิธีการคิดที่จะช่วยให้บุคคลมีความสามารถในการคิด เข้าใจปัญหาสามารถแก้ไขและคาดการณ์ล่วงหน้าถึงอุปสรรคที่จะเกิดขึ้น ทำให้บุคคลสามารถแก้ปัญหาได้ดี</p>
             </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+            <img class="large" src="../ourProject/assets/Images/problemSolving-01-01.png">   
+            </div>
+            <div class="col-lg-2"></div>
         </div>
     </div>
 </div>
 <div class="jersild-section text-center">
     <div class="text-center"style="padding: 32px 0;">
-        <h3 class="bold">เจอร์ซิลด์ (Jersild, 1992)</h3>
+        <h3 class="bold blue-box">เจอร์ซิลด์ (Jersild, 1992)</h3>
         <h5 class="grey-color">กล่าวไว้ว่า ความคิดสร้างสรรค์มีความสำคัญต่อการเรียนที่ส่งเสริมผู้เรียนในด้านต่าง ๆ ดังนี้</h5>
     </div>
     <div class="container">
@@ -140,28 +147,28 @@
             <div class="col-lg-3">
                 <img src="../ourProject/assets/Images/positiveThinking-01.png" width="200">
                 <div class="text-center" style="padding: 16px 0;">
-                    <h5 class="bold highlight-text">1. ช่วยส่งเสริมสุนทรียภาพ</h5>
+                    <h5 class="bold highlight-blue">1. ช่วยส่งเสริมสุนทรียภาพ</h5>
                     <p>ผู้เรียนจะชื่นชมและมีทัศนคติที่ดีต่อสิ่งต่าง ๆ ที่เขาคิดขึ้นมา โดยผลงานที่ผู้เรียนคิดหรือสร้างขึ้นมามีความหมายสำหรับตัวเขา</p>
                 </div>
             </div>
             <div class="col-lg-3">
                 <img src="../ourProject/assets/Images/relax-01.png" width="200">
                 <div class="text-center" style="padding: 16px 0;">
-                    <h5 class="bold highlight-text">2. เป็นการผ่อนคลายอารมณ์</h5>
+                    <h5 class="bold highlight-blue">2. เป็นการผ่อนคลายอารมณ์</h5>
                     <p>การทำงานอย่างสร้างสรรค์เป็นการผ่อนคลายทางอารมณ์ ลดความกดดัน ความคับข้องใจ และลดความก้าวร้าว</p>
                 </div> 
             </div>
             <div class="col-lg-3">
                 <img src="../ourProject/assets/Images/goodWork-01.png" width="200">
                 <div class="text-center" style="padding: 16px 0;">
-                    <h5 class="bold highlight-text">3. สร้างนิสัยในการทำงานที่ดี</h5>
+                    <h5 class="bold highlight-blue">3. สร้างนิสัยในการทำงานที่ดี</h5>
                      <p>ในระหว่างการเรียนการสอน ควรสอนระเบียบและนิสัยที่ดีในการทำงานควบคู่ไปด้วย</p>
                 </div>
             </div>
             <div class="col-lg-3">
                 <img src="../ourProject/assets/Images/activeLearning-01.png" width="200">
                 <div class="text-center" style="padding: 16px 0;">
-                    <h5 class="bold highlight-text">4. การเปิดโอกาสให้ผู้เรียนได้ศึกษา</h5>
+                    <h5 class="bold highlight-blue">4. การเปิดโอกาสให้ผู้เรียนได้ศึกษา</h5>
                     <p>ควรเปิดโอกาสให้ผู้เรียนได้ใช้จินตนาการของเขาในการพัฒนาการทดลองสร้างสิ่งใหม่</p>
                 </div>
             </div>
@@ -181,9 +188,58 @@
         </div>
     </div>
 </div>
+<div class="shadow-lg footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left pt-3">
+                <ul class="nav justify-content-center justify-content-md-start">
+                    <li class="nav-item">
+                        <a href="#" class="my-nav nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/learningClip.html" class="my-nav nav-link">VDO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/portfolio.html" class="my-nav nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ourProject/aboutUs.html" class="my-nav nav-link">About Us</a>
+                    </li>
+                </ul>
+                <p class="white-text mt-2">ภาควิชาเทคโนโลยีและสื่อสารการศึกษา<br>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+                <script type="text/javascript" src="https://freehitcounters.org/count/7pzg"></script><br>
+ <a href='http://besucherzaehler.co'>Besucherzähler einbinden</a> <script type='text/javascript' src='https://whomania.com/ctr?id=a11af2fbc5018a5a0f1668b6964f2812afe9718c'></script>
+            </div>
+            <div class="col-md-6 text-center align-self-center text-md-right mt-2">
+                <a class="navbar-brand" href="https://www.facebook.com/ect.kmutt09/"><img class="p-3" src="../ourProject/assets/Images/LOGO ภาค.png" width="170px" style="margin-right: 20px;" ></a>
+                <a class="navbar-brand" href="#top-home"><img src="../ourProject/assets/Images/logo scsy-01.png" width="100"></a>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
