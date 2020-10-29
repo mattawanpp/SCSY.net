@@ -4,10 +4,6 @@ html{
     padding: 0;
     margin: 0;
 }
-.container{
-    width: 100%;
-    height: auto;
-}
 #container{
     overflow-y: scroll;
 }

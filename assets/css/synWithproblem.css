@@ -127,6 +127,9 @@ iframe{
     .large {
       width: 500px;
     }
+    .middle {
+        width: 400px;
+      }
     .analogy-box{
         background-clip: padding-box;
         background: #F4DDA2;
@@ -141,6 +144,9 @@ iframe{
     .large {
       width: 100%;
     }
+    .middle {
+        width: 100%;
+      }
     iframe{
         width: 100%;
     }
